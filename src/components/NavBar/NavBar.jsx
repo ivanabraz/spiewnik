@@ -74,7 +74,8 @@ const NavBar = () => {
                             } else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
                                 return val;
                                 }
-                            })
+                                return false;
+                            }) 
                             .map((val) => {
                                 return(
                                     <Link key={val.title} to={`/${val.id}`} className={`nav-link flex flex-col text-base mt-4 duration-300 ${!open && "hidden"}`}> 
@@ -82,6 +83,8 @@ const NavBar = () => {
                                     </Link>
                                 )
                             })
+                    
+
                         }
                     </div>
 
