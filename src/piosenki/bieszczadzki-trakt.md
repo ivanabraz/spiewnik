@@ -1,6 +1,7 @@
 ---
 letter: 'b'
 title: 'Bieszczadzki Trakt'
+id: 'bieszczadzki-trakt'
 ---
 
 Kiedy nadejdzie czas, wabi nas ognia blask,<br/>
