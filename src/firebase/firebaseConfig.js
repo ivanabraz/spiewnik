@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs, getDoc, doc } from 'firebase/firestore';
+import { initializeFirestore, collection, getDocs, getDoc, doc } from 'firebase/firestore';
+import {getAuth} from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -11,8 +12,16 @@ const firebaseConfig = {
     measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const auth = getAuth(app);
+const db = initializeFirestore(app, {
+	experimentalForceLongPolling: true,
+});
+export {auth, db};
+
+// const app = initializeApp(firebaseConfig);
+// export const db = getFirestore(app);
 
 export const getPiosenki = async (id) => {
 	try {
