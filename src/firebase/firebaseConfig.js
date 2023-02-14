@@ -20,9 +20,6 @@ const db = initializeFirestore(app, {
 });
 export {auth, db};
 
-// const app = initializeApp(firebaseConfig);
-// export const db = getFirestore(app);
-
 export const getPiosenki = async (id) => {
 	try {
 		const piosenkiCollection = collection(db, 'piosenki');
