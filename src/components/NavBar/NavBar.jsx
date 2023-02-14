@@ -101,7 +101,7 @@ const NavBar = (NavBarProps) => {
                                         }) 
                                         .map((val) => {
                                             return(
-                                                <Link key={val.title} to={`/${val.id}`} onClick={() => setOpen(false)} className='mx-2 my-5 p-2 block text-gray-500'> 
+                                                <Link key={val.title} to={`/${val.id}`} onClick={() => setOpen(false)} className='mx-2 my-5 p-2 block text-gray-500 hover:bg-gray-100'> 
                                                     {val.title}
                                                 </Link>
                                             )

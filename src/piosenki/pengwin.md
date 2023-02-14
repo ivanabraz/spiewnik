@@ -1,6 +1,7 @@
 ---
 letter: 'p'
 title: 'Pingwin'
+id: 'pingwin'
 ---
 
 O jak przyjemnie i jak wesoło,<br/>
