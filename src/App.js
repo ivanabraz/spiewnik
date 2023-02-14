@@ -7,7 +7,7 @@ import { NavBarProvider } from './context/NavBarContext';
 
 // COMPONENTS
 import NavBar from './components/NavBar/NavBar';
-import HeroText from './components/HeroText/HeroText';
+import Header from './components/Header/Header';
 import SpiewnikLyricsContainer from './components/Spiewnik/SpiewnikLyricsContainer';
 
 
@@ -15,11 +15,11 @@ const App = () => {
     return (
         <NavBarProvider>
             <BrowserRouter>
+                <NavBar/>
                 <Routes>
-                    <Route index element={ <HeroText title="Śpiewnik" backgroundColor="bg-pink-2"/>} />
+                    <Route index element={ <Header/>} />
                     <Route path=":id" element={ <SpiewnikLyricsContainer/> } />
                 </Routes>
-                <NavBar/>
             </BrowserRouter>
         </NavBarProvider>
     );
