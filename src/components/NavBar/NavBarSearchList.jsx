@@ -12,7 +12,7 @@ import { getPiosenki, getPiosenkiById } from "../../firebase/firebaseConfig";
 
 
 const NavBarSearchList = () => {
-    const { open, setOpen } = useContext(NavBarContext);
+    const { setOpen } = useContext(NavBarContext);
     const [ searchTerm, setSearchTerm ] = useState("");
     const [piosenka, setPiosenki] = useState ([]);
     const { id } = useParams();
