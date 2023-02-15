@@ -14,10 +14,10 @@ const ThemeToggle = (ThemeToggleProps) => {
             <div className={`${ThemeToggleProps.toggleCustomClass} text-3xl text-neutral-900 dark:text-white`}>
             {theme === 'dark' 
                 ? (
-                    <FontAwesomeIcon icon={faMoon} onClick={() => setTheme( theme ==='dark' ? 'light' : 'dark')} />
+                    <FontAwesomeIcon icon={faSun} onClick={() => setTheme( theme ==='dark' ? 'light' : 'dark')} />
                     )
                 : (
-                    <FontAwesomeIcon icon={faSun} onClick={() => setTheme( theme ==='dark' ? 'light' : 'dark')}/>
+                    <FontAwesomeIcon icon={faMoon} onClick={() => setTheme( theme ==='dark' ? 'light' : 'dark')}/>
                 )
             }
         </div>  
