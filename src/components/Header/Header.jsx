@@ -39,11 +39,11 @@ const title = [
 
 const Header = () => {
     return (
-            <div className="text-white w-full h-[100vh] bg-purple-3 flex items-center justify-center text-center
+            <div className="text-neutral-900 dark:text-white w-full h-[100vh] bg-lime dark:bg-neutral-800 flex items-center justify-center text-center
             text-8xl xs:text6xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-9xl">
                 {title.map((title) => (
-                    <motion.span
-                    key={title.name}
+                    <motion.p
+                    key={title.delay}
                     initial={{ scale: 0 }} 
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
@@ -55,7 +55,7 @@ const Header = () => {
                         delay: `${title.delay}`,
                     }}>
                         {title.name}
-                    </motion.span>
+                    </motion.p>
                 ))}
             </div>
     )
