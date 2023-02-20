@@ -4,12 +4,13 @@ const SpiewnikLyrics = ({ piosenka }) => {
 
     return (
         <>
-        <div className={`w-full h-[100%] min-h-screen bg-neutral-200 dark:bg-neutral-800 flex justify-center text-neutral-900 dark:text-white`}>
+        <div className={`w-full h-[100%] min-h-screen flex justify-start xs:justify-start sm:justify-start md:justify-center lg:justify-center
+        `}>
             <div className='py-20'>
-                <h2 className="text-4xl  mb-10 mt-10">
-                    {piosenka.title}
+                <h2 className="text-4xl mb-10 mt-10 text-wrap" dangerouslySetInnerHTML={{ __html: piosenka.title }}>
+                    
                 </h2>
-                <p className="text-base " dangerouslySetInnerHTML={{ __html: piosenka.lyrics }}>
+                <p className="text-base" dangerouslySetInnerHTML={{ __html: piosenka.lyrics }}>
                 </p>
             </div>
         </div>

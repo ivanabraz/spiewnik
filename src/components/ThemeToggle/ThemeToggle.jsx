@@ -11,7 +11,7 @@ const ThemeToggle = (ThemeToggleProps) => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     return (
-            <div className={`${ThemeToggleProps.toggleCustomClass} text-3xl text-neutral-900 dark:text-white`}>
+            <div className={`${ThemeToggleProps.toggleCustomClass} text-3xl text-dmbgray-300 dark:text-white`}>
             {theme === 'dark' 
                 ? (
                     <FontAwesomeIcon icon={faSun} onClick={() => setTheme( theme ==='dark' ? 'light' : 'dark')} />

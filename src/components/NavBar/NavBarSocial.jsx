@@ -13,7 +13,7 @@ const navigation = {
 const NavBarSocial = () => {
     return (
         <>
-            <div className="border-t border-neutral-200 py-6 flex flex-row text-3xl text-neutral-900 dark:text-white">
+            <div className="border-t border-white py-6 flex flex-row text-3xl text-white">
                 {navigation.social.map((page) => (
                     <div key={page.name} className="flow-root px-4">
                         <a key={page.name} href={"https://" + page.href} target="_blank" rel="noopener noreferrer">

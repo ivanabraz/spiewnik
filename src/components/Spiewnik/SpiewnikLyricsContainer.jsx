@@ -29,9 +29,9 @@ const SpiewnikLyricsContainer = () => {
 
 
     return (
-        <>
+        <div className='bg-white dark:bg-dmbneutro-600 text-dmbneutro-600 dark:text-white w-full h-[100%] min-h-screen flex p-10'>
             <SpiewnikLyrics piosenka={piosenka}/>
-        </>
+        </div>
     )
 }
 

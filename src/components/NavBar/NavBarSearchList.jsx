@@ -33,11 +33,11 @@ const NavBarSearchList = () => {
 
     return (
         <>
-            <div className="mt-2 border-t border-neutral-200 pb-8 px-4">
+            <div className="mt-2 border-t border-white pb-8 px-4">
                 {/* Search */}
-                <div className='flex items-center rounded-full bg-neutral-100 mt-12 p-3 duration-300 text-neutral-900'>
-                    <FontAwesomeIcon icon={faSearch} className={`text-lg block cursor-pointer float-left`}/>
-                    <input id="searchInput" type={"text"} placeholder="Szukaj" className='ml-3 text-base bg-transparent w-full focus:outline-none'
+                <div className='flex items-center rounded-full bg-white mt-12 p-3 duration-300'>
+                    <FontAwesomeIcon icon={faSearch} className={`text-lg block cursor-pointer float-left text-dmbgreen-200`}/>
+                    <input id="searchInput" type={"text"} placeholder="Szukaj" className='ml-3 text-dmbgreen-200 text-base bg-transparent w-full focus:outline-none'
                     onChange={(event) => {setSearchTerm(event.target.value);}}
                     />
                 </div>
@@ -53,7 +53,9 @@ const NavBarSearchList = () => {
                         }) 
                         .map((val) => {
                             return(
-                                <Link key={val.title} to={`/${val.id}`} onClick={() => setOpen(false)} className='mx-2 my-5 p-2 block text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-700'> 
+                                <Link key={val.title} to={`/${val.id}`} onClick={() => setOpen(false)} className='mx-2 my-5 p-2 block 
+                                text-white 
+                                hover:font-bold duration-300'> 
                                     {val.title}
                                 </Link>
                             )
