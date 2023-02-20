@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import HeaderOgnisko from "./HeaderOgnisko";
 
 const title = [
     {
@@ -39,10 +40,13 @@ const title = [
 
 const Header = () => {
     return (
-            <div className="text-neutral-900 dark:text-white w-full h-[100vh] bg-lime dark:bg-neutral-800 flex items-center justify-center text-center
-            text-8xl xs:text6xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-9xl">
+            <div className="text-dmbneutro-600 dark:text-white w-full h-[100vh] bg-dmblime dark:bg-dmbneutro-600 flex items-center justify-center text-center
+            text-8xl xs:text6xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-[12rem]">
+                                <HeaderOgnisko/>
+
                 {title.map((title) => (
                     <motion.p
+                    className="relative"
                     key={title.delay}
                     initial={{ scale: 0 }} 
                     whileInView={{ scale: 1 }}

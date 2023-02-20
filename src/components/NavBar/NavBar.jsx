@@ -22,9 +22,9 @@ const NavBar = (NavBarProps) => {
                         <Dialog.Overlay className="fixed inset-0" />
                     </Transition.Child>
                     <Transition.Child as={Fragment} enter="transition ease-in-out duration-300 transform" enterFrom="-translate-x-full" enterTo="translate-x-0" leave="transition ease-in-out duration-300 transform" leaveFrom="translate-x-0" leaveTo="-translate-x-full">
-                        <div className="relative max-w-xs w-full bg-white dark:bg-neutral-700 shadow-xl pb-12 flex flex-col overflow-y-auto">
+                        <div className="relative max-w-xs w-full bg-dmbgreen-200 shadow-xl pb-12 flex flex-col overflow-y-auto">
                             <div className="px-4 pt-5 pb-2 flex">
-                                <button type="button" className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-neutral-400" onClick={() => setOpen(false)}>
+                                <button type="button" className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-white" onClick={() => setOpen(false)}>
                                     <span className="sr-only">Close menu</span>
                                     <XIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
