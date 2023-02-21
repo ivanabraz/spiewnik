@@ -42,7 +42,7 @@ const Header = () => {
     return (
             <div className="text-dmbneutro-600 dark:text-white w-full h-[100vh] bg-dmbneutro-100 dark:bg-dmbneutro-700 flex items-center justify-center text-center
             text-8xl xs:text6xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-[12rem]">
-                                <HeaderOgnisko/>
+                <HeaderOgnisko/>
 
                 {title.map((title) => (
                     <motion.p
