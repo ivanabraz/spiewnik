@@ -40,13 +40,13 @@ const title = [
 
 const Header = () => {
     return (
-            <div className="text-dmbneutro-600 dark:text-white w-full h-[100vh] bg-dmblime dark:bg-dmbneutro-600 flex items-center justify-center text-center
+            <div className="text-dmbneutro-600 dark:text-white w-full h-[100vh] bg-dmbneutro-100 dark:bg-dmbneutro-700 flex items-center justify-center text-center
             text-8xl xs:text6xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-[12rem]">
                                 <HeaderOgnisko/>
 
                 {title.map((title) => (
                     <motion.p
-                    className="relative"
+                    className="relative py-10"
                     key={title.delay}
                     initial={{ scale: 0 }} 
                     whileInView={{ scale: 1 }}

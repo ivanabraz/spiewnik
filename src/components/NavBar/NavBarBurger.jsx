@@ -22,7 +22,9 @@ const NavBarBurger = () => {
                         </button>
                     </div>
                 </nav>
-                <ThemeToggle toggleCustomClass={'p-4 sm:p-6 lg:p-8'} toggleWidth={4}/>
+                <div className="p-4 sm:p-6 lg:p-8 pt-6">
+                    <ThemeToggle toggleCustomClass={'p-2'} toggleWidth={4}/>
+                </div>
             </header>
         </>
     )
