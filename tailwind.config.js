@@ -8,6 +8,10 @@ module.exports = {
         'xs': '475px',
         ...defaultTheme.screens,
         },
+        fontFamily: {
+            'sans': ['"Work Sans"'],
+            'body': ['"Work Sans"'],
+        },
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
